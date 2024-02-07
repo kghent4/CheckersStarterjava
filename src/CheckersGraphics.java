@@ -16,7 +16,6 @@ public class CheckersGraphics extends JFrame {
         setTitle("Checkers Board");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         int titleBarHeight = 37;
-        System.out.println(titleBarHeight);
         int frameWidth = COLS * TILE_SIZE + 19 + getInsets().left + getInsets().right;
         int frameHeight = ROWS * TILE_SIZE + titleBarHeight + getInsets().bottom;
         setSize(frameWidth, frameHeight);
