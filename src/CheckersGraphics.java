@@ -57,7 +57,7 @@ public class CheckersGraphics extends JFrame {
                 g.fillRect(col * TILE_SIZE + 9, row * TILE_SIZE + 30, TILE_SIZE, TILE_SIZE);
                 // Draw checkers pieces if any
                 if (boardState[row][col] != 0) {
-                    g.setColor(boardState[row][col] == 1 ? Color.RED : Color.BLACK);
+                    g.setColor(boardState[row][col] == 1 ? Color.RED : boardState[row][col] == 2 ? Color.BLUE : boardState[row][col] == 3 ? Color.PINK : Color.CYAN);
                     g.fillOval(col * TILE_SIZE + 5 + 9, row * TILE_SIZE + 5 + 30, TILE_SIZE - 10, TILE_SIZE - 10);
                 }
             }
